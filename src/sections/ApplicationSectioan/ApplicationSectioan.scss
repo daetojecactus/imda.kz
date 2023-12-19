@@ -1,0 +1,28 @@
+.application {
+  height: 100vh;
+}
+
+@media (max-width: 1500px) {
+  .application {
+    &__container {
+      grid-template-columns: repeat(24, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .application {
+    height: auto;
+
+    &__container {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.empty-block {
+  grid-column-start: 3;
+  grid-column-end: 15;
+  grid-row-start: 13;
+  grid-row-end: 14;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2px solid var(--body-fc);
+  border-bottom: 2px solid var(--body-fc);
+}
+
+@media (max-width: 1500px) {
+  .empty-block {
+    grid-column-start: 4;
+    grid-column-end: 19;
+    grid-row-start: 10;
+    grid-row-end: 11;
+  }
+}
+
+@media (max-width: 900px) {
+  .empty-block {
+    display: none;
+  }
+}

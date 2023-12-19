@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "image": "/images/team-Marina.png",
+    "name": "Марина",
+    "quote": "Руковожу взводом, стремлюсь к батальону",
+    "position": "Digital-маркетолог"
+  },
+  {
+    "id": "2",
+    "image": "/images/team-Oleg.png",
+    "name": "Олег",
+    "quote": "Это я и мой коттекстолог",
+    "position": "Таргетолог и контекстолог"
+  },
+  {
+    "id": "3",
+    "image": "/images/team-Kirill.png",
+    "name": "Кирилл",
+    "quote": "Нет, я понимаю, я не самый  обаятельный и приятный парень на свете, но чтоб... никто.",
+    "position": "Графический дизайнер"
+  },
+  {
+    "id": "4",
+    "image": "/images/team-Aleksandr.png",
+    "name": "Александр",
+    "quote": "Неважно, кто ты - SMM-щик, маркетолог, программист или дизайнер. Но мама всегда заставит надеть тебя шапку.",
+    "position": "SMM-специалист"
+  },
+  {
+    "id": "5",
+    "image": "/images/team-Boris.png",
+    "name": "Борис",
+    "quote": "Хмели сумели и мы сможем!",
+    "position": "Фотограф"
+  },
+  {
+    "id": "6",
+    "image": "/images/team-Ivan.png",
+    "name": "Иван",
+    "quote": "Любите друг друга !... Почаще",
+    "position": "Фотограф"
+  },
+  {
+    "id": "7",
+    "image": "/images/team-Dmitriy.png",
+    "name": "Дмитрий",
+    "quote": "Если я не ожидаю - значит я неожиданный",
+    "position": "Project-менеджер"
+  },
+  {
+    "id": "8",
+    "image": "/images/team-Danil.png",
+    "name": "Данил",
+    "quote": "Аварийный выход на высоте 30 тысяч футов. Иллюзия безопасности",
+    "position": "Frontend developer"
+  },
+  {
+    "id": "9",
+    "image": "/images/team-Batyr.png",
+    "name": "Батыр",
+    "quote": "Я не виноват, это эволюция все",
+    "position": "Видеограф"
+  }
+]

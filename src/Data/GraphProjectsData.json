@@ -1,0 +1,77 @@
+[
+  {
+    "id": "1",
+    "image": "/images/graph-1.png",
+    "title": "SKY"
+  },
+  {
+    "id": "2",
+    "image": "/images/graph-2.png",
+    "title": "Nike"
+  },
+  {
+    "id": "3",
+    "image": "/images/graph-3.png",
+    "title": "testtest"
+  },
+  {
+    "id": "4",
+    "image": "/images/graph-4.png",
+    "title": "AirJordan"
+  },
+  {
+    "id": "5",
+    "image": "/images/graph-5.png",
+    "title": "test"
+  },
+  {
+    "id": "6",
+    "image": "/images/graph-6.png",
+    "title": "SKY"
+  },
+  {
+    "id": "7",
+    "image": "/images/graph-7.png",
+    "title": "Nike"
+  },
+  {
+    "id": "8",
+    "image": "/images/graph-8.png",
+    "title": "testtest"
+  },
+  {
+    "id": "9",
+    "image": "/images/graph-9.png",
+    "title": "AirJordan"
+  },
+  {
+    "id": "10",
+    "image": "/images/graph-10.png",
+    "title": "test"
+  },
+  {
+    "id": "11",
+    "image": "/images/graph-11.png",
+    "title": "SKY"
+  },
+  {
+    "id": "12",
+    "image": "/images/graph-12.png",
+    "title": "Nike"
+  },
+  {
+    "id": "13",
+    "image": "/images/graph-13.png",
+    "title": "testtest"
+  },
+  {
+    "id": "14",
+    "image": "/images/graph-14.png",
+    "title": "AirJordan"
+  },
+  {
+    "id": "15",
+    "image": "/images/graph-15.png",
+    "title": "test"
+  }
+]

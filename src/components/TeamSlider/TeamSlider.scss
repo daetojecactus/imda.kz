@@ -1,0 +1,155 @@
+//employee
+.employee {
+  padding: 50px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &__image {
+    margin-right: 25px;
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 370px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 65px;
+    line-height: 100px;
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 23px;
+    line-height: 36px;
+  }
+
+  &__position {
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    font-size: 28px;
+    line-height: 43px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .employee {
+    padding: 40px 65px;
+
+    &__image {
+      max-width: 270px;
+    }
+
+    &__info {
+      max-width: 240px;
+    }
+
+    &__name {
+      font-size: 35px;
+      line-height: 54px;
+    }
+
+    &__descr {
+      font-size: 15px;
+      line-height: 23px;
+    }
+
+    &__position {
+      font-size: 17px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .employee {
+    padding: 40px 45px;
+
+    &__image {
+      max-width: 200px;
+    }
+
+    &__name {
+      font-size: 32px;
+    }
+
+    &__descr {
+      font-size: 14px;
+    }
+
+    &__position {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .employee {
+    padding: 45px 23px 23px 23px;
+
+    &__image {
+      max-width: 174px;
+    }
+
+    &__info {
+      max-width: 200px;
+    }
+
+    &__name {
+      font-size: 25px;
+      line-height: 39px;
+    }
+
+    &__descr {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    &__position {
+      font-size: 15px;
+      line-height: 23px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .employee {
+    padding: 35px 15px 20px 15px;
+
+    &__image {
+      margin-right: 10px;
+      max-width: 115px;
+    }
+
+    &__info {
+      max-width: 200px;
+    }
+
+    &__name {
+      margin-bottom: 15px;
+      font-size: 22px;
+      line-height: 35px;
+    }
+
+    &__descr {
+      font-size: 11px;
+      line-height: 19px;
+    }
+
+    &__position {
+      font-size: 13px;
+      line-height: 20px;
+      bottom: 3px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "image": "/images/smm-1.png",
+    "title": "SMM"
+  },
+  {
+    "id": "2",
+    "image": "/images/smm-2.png",
+    "title": "SMM"
+  },
+  {
+    "id": "3",
+    "image": "/images/smm-3.png",
+    "title": "SMM"
+  },
+  {
+    "id": "4",
+    "image": "/images/smm-4.png",
+    "title": "SMM"
+  },
+  {
+    "id": "5",
+    "image": "/images/smm-5.png",
+    "title": "SMM"
+  },
+  {
+    "id": "6",
+    "image": "/images/smm-6.png",
+    "title": "SMM"
+  },
+  {
+    "id": "7",
+    "image": "/images/smm-7.png",
+    "title": "SMM"
+  },
+  {
+    "id": "8",
+    "image": "/images/smm-8.png",
+    "title": "SMM"
+  }
+]

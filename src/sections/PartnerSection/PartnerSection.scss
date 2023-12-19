@@ -1,0 +1,176 @@
+.partner {
+  height: 100vh;
+
+  &__content {
+    flex-direction: column;
+    align-items: normal;
+    justify-content: normal;
+  }
+
+  &__container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+  }
+
+  &__intro {
+    padding: 20px 40px;
+    width: 100%;
+    max-width: 950px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 56px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 56px;
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  &__descr-link {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46px;
+    color: var(--body-fc);
+  }
+
+  &__video {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__video-content {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .partner {
+    &__container {
+      grid-template-columns: repeat(24, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+    }
+
+    &__intro {
+      padding: 20px 30px;
+      max-width: 550px;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 45px;
+    }
+
+    &__subtitle {
+      font-size: 28px;
+      line-height: 45px;
+    }
+
+    &__descr {
+      font-size: 20px;
+      line-height: 31px;
+    }
+
+    &__descr-link {
+      font-size: 20px;
+      line-height: 31px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .partner {
+    height: auto;
+
+    &__container {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+    }
+
+    &__intro {
+      padding: 30px 23px 50px 23px;
+    }
+
+    &__title {
+      font-size: 35px;
+      line-height: 56px;
+    }
+
+    &__subtitle {
+      margin-bottom: 17px;
+      font-size: 35px;
+      line-height: 56px;
+    }
+
+    &__descr {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__descr-link {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__video {
+      margin-bottom: 58px;
+      height: 290px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .partner {
+    &__intro {
+      padding: 20px 15px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    &__subtitle {
+      margin-bottom: 15px;
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    &__descr {
+      font-size: 14px;
+      line-height: 23px;
+    }
+
+    &__descr-link {
+      font-size: 14px;
+      line-height: 23px;
+    }
+
+    &__video {
+      margin-bottom: 30px;
+      height: 200px;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.sidebar-block {
+  grid-column-start: 15;
+  grid-column-end: 20;
+  grid-row-start: 4;
+  grid-row-end: 13;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-left: 2px solid var(--body-fc);
+  overflow: hidden;
+
+  &__item:not(:last-child) {
+    margin-bottom: 17px;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 40px;
+    line-height: 62px;
+    text-align: start;
+    color: var(--body-fc);
+  }
+
+  &__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--body-fc);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__link:hover::after {
+    opacity: 1;
+  }
+
+  &__item {
+    padding-left: 13px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 62px;
+  }
+
+  &__list {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  &__item--process {
+    min-height: 124px;
+  }
+
+  &__item--active {
+    padding-top: 3px;
+    padding-right: 5px;
+    padding-bottom: 4px;
+    background-color: var(--body-fc);
+    color: var(--body-bg);
+    transform: translateX(10%);
+  }
+  //*
+  &__item--active::before {
+    content: "";
+    background-color: var(--body-fc);
+    width: 100vh;
+    left: 329px;
+    height: 69px;
+    position: absolute;
+    top: 0;
+  }
+
+  &__item--process::before {
+    content: "";
+    background-color: var(--body-fc);
+    width: 100vh;
+    left: 329px;
+    height: 131px;
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media (max-width: 1500px) {
+  .sidebar-block {
+    grid-column-start: 19;
+    grid-column-end: 25;
+    grid-row-start: 3;
+    grid-row-end: 10;
+
+    &__link {
+      font-size: 25px;
+      line-height: 39px;
+    }
+
+    &__link::after {
+      height: 2px;
+    }
+
+    &__item {
+      min-height: 40px;
+    }
+
+    &__list {
+      max-width: 220px;
+    }
+
+    &__item--process {
+      min-height: 80px;
+    }
+
+    &__item--active::before {
+      content: "";
+      background-color: var(--body-fc);
+      width: 100vh;
+      left: 209px;
+      height: 46px;
+      position: absolute;
+      top: 0;
+    }
+
+    &__item--process::before {
+      content: "";
+      background-color: var(--body-fc);
+      width: 100vh;
+      left: 209px;
+      height: 85px;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar-block {
+    display: none;
+  }
+}

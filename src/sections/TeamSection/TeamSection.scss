@@ -1,0 +1,141 @@
+//team
+.team {
+  height: 100vh;
+
+  &__content .swiper-button-prev,
+  &__content .swiper-button-next {
+    width: 64px;
+    height: 5px;
+    background-color: var(--body-fc);
+  }
+
+  &__content .swiper-button-prev {
+    left: 25px;
+  }
+
+  &__content .swiper-button-next {
+    right: 25px;
+  }
+
+  &__content .swiper-button-prev::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border-left: 5px solid var(--body-fc);
+    border-bottom: 5px solid var(--body-fc);
+    transform: rotate(45deg);
+  }
+
+  &__content .swiper-button-next::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border-left: 5px solid var(--body-fc);
+    border-bottom: 5px solid var(--body-fc);
+    transform: rotate(-135deg);
+  }
+
+  &__mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .team {
+    &__container {
+      grid-template-columns: repeat(24, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+    }
+
+    &__content .swiper-button-prev,
+    &__content .swiper-button-next {
+      width: 24px;
+      height: 2px;
+    }
+
+    &__content .swiper-button-prev {
+      left: 15px;
+    }
+
+    &__content .swiper-button-next {
+      right: 15px;
+    }
+
+    &__content .swiper-button-prev::after {
+      width: 8px;
+      height: 8px;
+      border-radius: 1px;
+      border-left: 2px solid var(--body-fc);
+      border-bottom: 2px solid var(--body-fc);
+    }
+
+    &__content .swiper-button-next::after {
+      width: 8px;
+      height: 8px;
+      border-radius: 1px;
+      border-left: 2px solid var(--body-fc);
+      border-bottom: 2px solid var(--body-fc);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .team {
+    height: auto;
+
+    &__container {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+      position: relative;
+    }
+
+    &__content .swiper-button-prev {
+      left: 23px;
+    }
+
+    &__content .swiper-button-next {
+      right: 23px;
+    }
+
+    &__mobile {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 23px;
+      color: var(--body-fc);
+      z-index: 10;
+    }
+
+    &__mobile-svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--body-fc);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .team {
+    &__content .swiper-button-prev {
+      display: none;
+    }
+
+    &__content .swiper-button-next {
+      display: none;
+    }
+  }
+}

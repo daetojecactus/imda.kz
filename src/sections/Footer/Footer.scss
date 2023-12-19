@@ -1,0 +1,367 @@
+//footer
+.footer {
+  height: 40vh;
+  background-color: var(--notchange-bg);
+  color: var(--notchange-fc);
+
+  &__container {
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  &__logo,
+  &__schedule {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 2px solid var(--notchange-fc);
+  }
+
+  &__title,
+  &__contacts {
+    grid-column-start: 3;
+    grid-column-end: 15;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__social,
+  &__links {
+    grid-column-start: 15;
+    grid-column-end: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-left: 2px solid var(--notchange-fc);
+  }
+
+  &__logo,
+  &__title,
+  &__social {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom: 2px solid var(--notchange-fc);
+  }
+
+  &__schedule,
+  &__contacts,
+  &__links {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  &__title-title {
+    margin: 0;
+    max-width: 630px;
+    font-size: 70px;
+    line-height: 77px;
+    text-align: center;
+  }
+
+  &__social-descr {
+    margin: 0;
+    max-width: 320px;
+    font-size: 50px;
+    line-height: 55px;
+    text-align: center;
+  }
+
+  &__schedule-descr {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  &__contacts-list {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contacts-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contacts-item:last-child {
+    align-items: center;
+  }
+
+  &__contacts-caption {
+    margin-bottom: 5px;
+    font-size: 29px;
+    line-height: 45px;
+  }
+
+  &__contacts-link {
+    font-size: 25px;
+    line-height: 29px;
+    color: var(--notchange-fc);
+  }
+
+  &__links-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1500px) {
+  .footer {
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(24, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    &__logo,
+    &__schedule {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    &__title,
+    &__contacts {
+      grid-column-start: 4;
+      grid-column-end: 19;
+    }
+
+    &__social,
+    &__links {
+      grid-column-start: 19;
+      grid-column-end: 25;
+    }
+
+    &__logo,
+    &__title,
+    &__social {
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__schedule,
+    &__contacts,
+    &__links {
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &__title-title {
+      max-width: 450px;
+      font-size: 50px;
+      line-height: 55px;
+    }
+
+    &__social-descr {
+      max-width: 270px;
+      font-size: 43px;
+      line-height: 47px;
+    }
+
+    &__schedule-descr {
+      max-width: 170px;
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    &__contacts-list {
+      padding: 0 25px;
+    }
+
+    &__contacts-caption {
+      font-size: 25px;
+      line-height: 29px;
+    }
+
+    &__links-list {
+      justify-content: space-evenly;
+    }
+
+    &__links-image {
+      width: 45px;
+      height: 45px;
+    }
+
+    &__links-image--mail {
+      width: 58px;
+      height: 58px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    height: auto;
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      height: auto;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__title {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__contacts {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      border-bottom: 2px solid var(--notchange-fc);
+    }
+
+    &__social {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      border: none;
+      border-bottom: 2px solid var(--notchange-fc);
+    }
+
+    &__links {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      border: none;
+      border-bottom: 2px solid var(--notchange-fc);
+    }
+
+    &__schedule {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      border: none;
+    }
+
+    &__title-title {
+      padding: 15px 0 20px;
+      font-size: 35px;
+      line-height: 38px;
+    }
+
+    &__contacts-list {
+      padding: 37px 0;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__contacts-item {
+      align-items: center;
+    }
+
+    &__contacts-item:not(:last-child) {
+      margin-bottom: 37px;
+    }
+
+    &__contacts-caption {
+      font-size: 29px;
+      line-height: 34px;
+    }
+
+    &__contacts-link {
+      font-size: 29px;
+      line-height: 34px;
+    }
+
+    &__social-descr {
+      padding: 15px 0;
+      font-size: 35px;
+      line-height: 38px;
+    }
+
+    &__links-list {
+      padding: 60px 0 50px;
+    }
+
+    &__links-image {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__links-image--mail {
+      width: 92px;
+      height: 92px;
+    }
+
+    &__schedule-descr {
+      padding: 35px 0;
+      max-width: 300px;
+      font-size: 27px;
+      line-height: 44px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .footer {
+    &__title-title {
+      padding: 15px;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    &__contacts-list {
+      padding: 15px;
+    }
+
+    &__contacts-item:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &__contacts-caption {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &__contacts-link {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    &__social-descr {
+      padding: 15px;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    &__links-list {
+      padding: 25px 15px 10px;
+      align-items: center;
+    }
+
+    &__links-image {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__links-image--mail {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__schedule-descr {
+      padding: 15px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
